@@ -5,7 +5,7 @@ export default class landing extends Component {
     return (
       <div>
         <Particles
-          height="100vh"
+          height="120vh"
           params={{
             particles: {
               number: {
@@ -70,6 +70,9 @@ export default class landing extends Component {
               </div>
             </h1>
           </div>
+        </div>
+        <div className="btnDiv">
+          <div>Know More</div>
         </div>
 
         <div className="img-3"></div>
