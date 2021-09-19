@@ -1,0 +1,226 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap");
+main {
+  font-family: "Heebo", sans-serif;
+}
+
+.landing {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 1000px;
+}
+
+.bigText {
+  font-family: "Heebo", sans-serif;
+  font-size: 4rem;
+  font-weight: lighter;
+  position: fixed;
+  color: white;
+  top: 33%;
+  left: 2%;
+  transform: translate("-50%", "-30%");
+}
+
+.intro {
+  background: black;
+  /* background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png"); */
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.introText {
+  color: rgb(236, 231, 231);
+  font-family: "Heebo", sans-serif;
+  /* font-family: 'Lobster', cursive;
+  font-family: 'Signika', sans-serif; */
+  font-size: 4rem;
+}
+
+.slider {
+  background: rgb(97, 105, 109);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+}
+
+.hide {
+  background: black;
+  overflow: hidden;
+}
+.hide span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  color: white;
+  margin: 16em 8em;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.3rem;
+  width: 55%;
+  font-family: "Heebo", sans-serif;
+  width: 55%;
+  color: rgb(107, 107, 107);
+}
+
+button {
+  font-size: 1.3rem;
+  padding: 0.5rem 1em;
+  margin-top: 3em;
+  background-color: rgb(0, 144, 255);
+  border: none;
+  color: white;
+  font-size: bold;
+  /* text-transform: uppercase; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background: #000100;
+  color: white;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  /* z-index: 0; */
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  font-family: "Montserrat";
+  font-size: 24px;
+  border-bottom: 1px solid #333433;
+  /* padding: 20px; */
+  padding-left: 40px;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.menu-links {
+  left: 100px;
+  line-height: 1;
+  margin-left: 30px;
+}
+
+.menu-links ul li {
+  display: inline-block;
+  padding: 20px 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#text1 {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 900px;
+  z-index: 1;
+  font-family: "Heebo", sans-serif;
+}
+
+.col {
+  color: white;
+  font-family: "Montserrat";
+}
+
+.title {
+  font-size: 120px;
+  text-transform: uppercase;
+  /* width: 0%; */
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+}
+
+.img-3 {
+  position: absolute;
+  top: 700px;
+  right: 30px;
+  transform: translateY(-40%);
+  background: url("./component/back1-removebg-preview.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  z-index: 2;
+  background: red;
+}
+
+.first {
+  top: 0;
+}
+
+.second {
+  top: 33.3%;
+}
+
+.third {
+  top: 55.6%;
+}
+
+.flexMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
