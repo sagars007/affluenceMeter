@@ -1,8 +1,15 @@
 import "./App.css";
-import Landing from "./component/landing";
 import gsap from "gsap";
 import React, { Component } from "react";
-
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+import Home from "./component/home";
+import Second from "./component/Second";
 export default class App extends Component {
   constructor() {
     super();
@@ -45,24 +52,12 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="landing">
-          <Landing />
-        </section>
-
-        <div className="intro">
-          <div className="introText">
-            <div className="hide">
-              <span className="text">Innovating spirits are </span>
-            </div>
-            <div className="hide">
-              <span className="text">supposed to be</span>
-            </div>
-            <div className="hide">
-              <span className="text">kendered</span>
-            </div>
-          </div>
-        </div>
-        <div className="slider"></div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/knowMore" component={Second} />
+          </Switch>
+        </Router>
       </div>
     );
   }

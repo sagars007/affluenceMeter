@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Particles from "react-particles-js";
+import { Link } from "react-router-dom";
 export default class landing extends Component {
   render() {
     return (
@@ -71,9 +72,12 @@ export default class landing extends Component {
             </h1>
           </div>
         </div>
-        <div className="btnDiv">
-          <div>Know More</div>
-        </div>
+        <Link to="/knowMore">
+          {" "}
+          <div className="btnDiv">
+            <div>Know More</div>
+          </div>
+        </Link>
 
         <div className="img-3"></div>
         <div class="overlay first"></div>

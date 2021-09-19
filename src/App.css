@@ -121,6 +121,7 @@ body {
   height: auto;
   background: #000100;
   color: white;
+  overflow-x: hidden;
   /* overflow: hidden; */
 }
 
@@ -248,4 +249,28 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.secondLarge {
+  background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap");
+.lrgTXt2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 80px;
+  position: relative;
+  top: 30%;
+  left: 3%;
+  height: 500px;
+  font-family: "Poppins", sans-serif;
+
+  /* fl */
+}
+.lrgTXt2 div {
+  margin-bottom: 20px;
 }
