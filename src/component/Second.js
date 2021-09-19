@@ -3,7 +3,8 @@ import gsap from "gsap";
 export default class Second extends Component {
   componentDidMount() {
     const tl = gsap.timeline({ default: { ease: "power2.out" } });
-    tl.fromTo(".lrgTXt2", { opacity: 0 }, { opacity: 1, duration: 5 });
+    tl.fromTo(".secondLarge", { opacity: 0 }, { opacity: 1, duration: 2 });
+    tl.fromTo(".lrgTXt2", { opacity: 0 }, { opacity: 1, duration: 1 });
   }
   render() {
     return (
