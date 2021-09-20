@@ -151,3 +151,16 @@
 {
   /* <canvas className="webgl"></canvas> */
 }
+
+<div className="relMe">
+  <div className="portBox">Welcome To Space</div>
+  <div className="portBox1">
+    Explore Each Domain <br /> to know more
+  </div>
+  <div className="btnBox">
+    <button>Education</button>
+    <button>Domain 2</button>
+    <button>Domain 3</button>
+    <button>Domain 4</button>
+  </div>
+</div>;

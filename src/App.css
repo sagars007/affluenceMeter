@@ -274,3 +274,58 @@ img {
 .lrgTXt2 div {
   margin-bottom: 20px;
 }
+
+.portContainer {
+  height: 100vh;
+  width: 100%;
+  background: #131313;
+  font-family: "Poppins", sans-serif;
+}
+.relMe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.portBox {
+  /* border: 2px solid snow; */
+  height: auto;
+  width: 300px;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  color: snow;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.portBox1 {
+  height: auto;
+  /* width: 300px; */
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  color: snow;
+  font-size: 44px;
+}
+
+.btnBox {
+  height: auto;
+  /* width: 300px; */
+  position: absolute;
+  left: 8%;
+  top: 55%;
+  color: snow;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* font-size: 44px; */
+}
+
+.btnBox button {
+  background-color: inherit;
+  border-radius: 2px;
+  border: 1px solid snow;
+  cursor: pointer;
+}
