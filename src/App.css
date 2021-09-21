@@ -252,10 +252,12 @@ img {
 }
 
 .secondLarge {
-  background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg");
+  /* background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg"); */
+  background-image: url("./component/images/back1.jpg");
   height: 100vh;
   width: 100vw;
   background-position: center;
+  background-size: contain;
   font-family: "Roboto", sans-serif;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap");
@@ -264,7 +266,7 @@ img {
   flex-direction: column;
   font-size: 80px;
   position: relative;
-  top: 30%;
+  top: 35%;
   left: 3%;
   height: 500px;
   font-family: "Poppins", sans-serif;
@@ -273,6 +275,7 @@ img {
 }
 .lrgTXt2 div {
   margin-bottom: 20px;
+  color: seashell;
 }
 
 .portContainer {
@@ -328,4 +331,43 @@ img {
   border-radius: 2px;
   border: 1px solid snow;
   cursor: pointer;
+}
+
+.container2 {
+  height: 820px;
+  width: 100%;
+  background: linear-gradient(#2b1055, #7597de);
+  background-size: contain;
+  z-index: 2;
+  position: relative;
+}
+
+.mount1 {
+  height: 800px;
+  width: 100%;
+}
+.mount1 img {
+  height: 100%;
+}
+
+.mount1 {
+  position: absolute;
+  /* top: calc(820px-); */
+  top: 100px;
+}
+
+.btnMount {
+  /* background-color: inherit; */
+  /* border: 1px solid white; */
+  position: absolute;
+  border-radius: 10px;
+  left: 41%;
+
+  cursor: pointer;
+}
+.btnMount button {
+  cursor: pointer;
+  background: inherit;
+  border: 1px solid seashell;
+  border-radius: 10px;
 }

@@ -149,7 +149,7 @@ const Conatiner = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 1.5 } }}
             >
-              Domain 1
+              Domain 2
             </Button>
             <Button
               whileHover={{ scale: 1.05 }}
@@ -162,7 +162,7 @@ const Conatiner = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 1.5 } }}
             >
-              Domain 1
+              Domain 3
             </Button>
             <Button
               whileHover={{ scale: 1.05 }}
@@ -175,7 +175,7 @@ const Conatiner = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 1.5 } }}
             >
-              Domain 1
+              Domain 4
             </Button>
           </ButtonContainer>
         </ColumnLeft>
