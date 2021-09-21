@@ -8,7 +8,6 @@ export default class container2 extends Component {
       <div>
         <div className="container2">
           <Particle2 />
-
           <Moon />
         </div>
       </div>

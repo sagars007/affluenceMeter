@@ -5,6 +5,7 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 main {
   font-family: "Heebo", sans-serif;
 }
@@ -361,7 +362,7 @@ img {
   /* border: 1px solid white; */
   position: absolute;
   border-radius: 10px;
-  left: 41%;
+  left: 37%;
 
   cursor: pointer;
 }
@@ -370,4 +371,18 @@ img {
   background: inherit;
   border: 1px solid seashell;
   border-radius: 10px;
+}
+
+.apexcharts-menu {
+  background: #000100 !important;
+  color: #8f8f8f;
+  border: 0px !important;
+  border-radius: 5px;
+}
+.chartCol {
+  color: red !important ;
+}
+
+.apexcharts-xaxis-label {
+  color: snow !important;
 }

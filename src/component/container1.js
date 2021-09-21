@@ -5,6 +5,7 @@ import PlanetOne from "./images/planets/planet.svg";
 import PlanetTwo from "./images/planets/planet-2.svg";
 import PlanetThree from "./images/planets/planet-3.svg";
 import PlanetFour from "./images/planets/planet-4.svg";
+import { Link } from "react-router-dom";
 
 const Section = styled.section`
   height: 100vh;
@@ -125,19 +126,21 @@ const Conatiner = () => {
             Explore Each Domain
           </motion.p>
           <ButtonContainer>
-            <Button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{
-                scale: 0.95,
-                backgroundColor: "#67F6E7",
-                border: "none",
-                color: "#000",
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 1.5 } }}
-            >
-              Domain 1
-            </Button>
+            <Link to="/domain1">
+              <Button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{
+                  scale: 0.95,
+                  backgroundColor: "#67F6E7",
+                  border: "none",
+                  color: "#000",
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { duration: 1.5 } }}
+              >
+                Domain 1
+              </Button>
+            </Link>
             <Button
               whileHover={{ scale: 1.05 }}
               whileTap={{

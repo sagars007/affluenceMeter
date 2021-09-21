@@ -10,6 +10,7 @@ export default class Second extends Component {
     tl.fromTo(".lrgTXt2", { opacity: 0 }, { opacity: 1, duration: 1 });
   }
   render() {
+    console.log("Second");
     return (
       <div>
         <div className="secondLarge">
