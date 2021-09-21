@@ -1,46 +1,94 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
-export default function SimpleBarChart(props) {
-  let mark1 = [],
-    mark2 = [],
-    mark3 = [];
-  if (props.markArray) {
-    props.markArray.forEach((obj) => {
-      mark1.push(obj.mark1);
-      mark2.push(obj.mark2);
-      mark3.push(obj.mark3);
-    });
-  }
+
+export default function EduBarChart2(props) {
+  console.log(props.data);
+  let i0 = [],
+    i1 = [],
+    i2 = [],
+    i3 = [],
+    i4 = [],
+    i5 = [],
+    i6 = [];
+  props.data.forEach((element) => {
+    i0.push(element[0]);
+    i1.push(element[1]);
+    i2.push(element[2]);
+    i3.push(element[3]);
+    i4.push(element[4]);
+    i5.push(element[5]);
+    i6.push(element[6]);
+  });
   const series = [
     {
-      name: "89 And Above",
-      data: mark1,
+      name: "Total 0 Internship",
+      data: i0,
     },
     {
-      name: "75 - 89",
-      data: mark2,
+      name: "Total 1 Internship",
+      data: i1,
     },
     {
-      name: "59 - 75",
-      data: mark3,
+      name: "Total 2 Internship",
+      data: i2,
+    },
+    {
+      name: "Total 3 Internship",
+      data: i3,
+    },
+    {
+      name: "Total 4 Internship",
+      data: i4,
+    },
+    {
+      name: "Total 5 Internship",
+      data: i5,
+    },
+    {
+      name: "Total 6 Internship",
+      data: i6,
     },
   ];
   var options = {
     series: [
       {
-        name: "89 And Above",
-        data: mark1,
+        name: "Total 0 Internship",
+        data: i0,
       },
       {
-        name: "75 - 89",
-        data: mark2,
+        name: "Total 1 Internship",
+        data: i1,
       },
       {
-        name: "59 - 75",
-        data: mark3,
+        name: "Total 2 Internship",
+        data: i2,
+      },
+      {
+        name: "Total 3 Internship",
+        data: i3,
+      },
+      {
+        name: "Total 4 Internship",
+        data: i4,
+      },
+      {
+        name: "Total 5 Internship",
+        data: i5,
+      },
+      {
+        name: "Total 6 Internship",
+        data: i6,
       },
     ],
-    colors: ["#ff4560", "#008ffa", "#00e495"],
+    colors: [
+      "#ff4560",
+      "#008ffa",
+      "#00e495",
+      "#ffaf1a",
+      "#000",
+      "#5065a5",
+      "#ff5722",
+    ],
     chart: {
       type: "bar",
       height: 350,
@@ -105,7 +153,7 @@ export default function SimpleBarChart(props) {
         type="bar"
         style={{ marginTop: "10px" }}
         series={series}
-        height={300}
+        height={400}
       />
     </div>
   );

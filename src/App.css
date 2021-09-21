@@ -380,9 +380,35 @@ img {
   border-radius: 5px;
 }
 .chartCol {
-  color: red !important ;
+  color: black !important ;
 }
 
 .apexcharts-xaxis-label {
   color: snow !important;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 52.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.drpDwn {
+  background-color: inherit;
+  color: #8b3845;
+  border: 2px solid #8b3845;
+  border-radius: 10px;
+  padding: 1%;
+  outline: none;
 }

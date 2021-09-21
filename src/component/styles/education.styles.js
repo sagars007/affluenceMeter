@@ -12,3 +12,12 @@ export const GeneralDiv = styled.div`
   height: 500px;
   box-shadow: ${(props) => (props.shadadow ? "none" : COLORS.shapdow)};
 `;
+
+export const IconCont = styled.div`
+  display: inline;
+  top: 2%;
+  color: ${COLORS.color5};
+  font-size: 32px;
+  margin-right: 15px;
+  cursor: pointer;
+`;

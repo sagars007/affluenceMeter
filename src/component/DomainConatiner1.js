@@ -11,10 +11,14 @@ import {
   LargeBarGraph,
   LargeConatiner,
 } from "./styles/app.styles";
+import { Link } from "react-router-dom";
 import { eduTier } from "../dataMiddleware/EduData";
 import FreqencyBoxComponent from "./FreqencyBoxComponent";
 import EducationBarChart from "./Charts/EducationBarChart";
 import TierComponent from "./TierComponent";
+import { IconCont } from "./styles/education.styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 function filterEduCredit(tierNo) {
   let data1 = eduTier.filter((obj) => {
     return obj["Credit Score"] >= 350 && obj["College Tier"] === tierNo;
@@ -67,7 +71,16 @@ export default function DomainConatiner1() {
   return (
     <div>
       <Domain>
-        <Header>Learn How Our Education Model Works</Header>
+        <Header>
+          {" "}
+          <Link to="/knowMore">
+            {" "}
+            <IconCont>
+              <FontAwesomeIcon icon={faArrowAltCircleLeft} />
+            </IconCont>
+          </Link>
+          Learn How Our Education Model Works
+        </Header>
         <DomainHeader>Ananlytics and Much More</DomainHeader>
         <FrequencyDiv>
           <FreqencyBoxComponent data={eduVscredTier1} name={"Tier 1"} />
