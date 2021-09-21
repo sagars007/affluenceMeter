@@ -9,6 +9,6 @@ export const GeneralDiv = styled.div`
   padding: ${(props) => props.padding};
   border-radius: ${(props) => props.radius};
   overflow: ${(props) => props.overflow};
-  height: 450px;
+  height: 500px;
   box-shadow: ${(props) => (props.shadadow ? "none" : COLORS.shapdow)};
 `;

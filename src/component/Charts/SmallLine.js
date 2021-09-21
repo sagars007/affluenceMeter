@@ -2,7 +2,6 @@ import React from "react";
 import ReactApexChart from "react-apexcharts";
 
 export default function SmallLine(props) {
-  console.log(props.data);
   var options1 = {
     colors: ["#8b3845"],
     series: [

@@ -4,37 +4,75 @@ import ReactApexChart from "react-apexcharts";
 
 export default function PieChart(props) {
   let { lenData, tierData, label } = props;
-  var options = {
-    series: lenData,
+  let options = {
     chart: {
-      width: 480,
-      type: "pie",
+      height: 100,
+      type: "radialBar",
     },
+    plotOptions: {
+      radialBar: {
+        offsetY: 0,
+        startAngle: 0,
+        endAngle: 270,
+        hollow: {
+          margin: 5,
+          size: "30%",
+          background: "transparent",
+          image: undefined,
+        },
+        dataLabels: {
+          name: {
+            show: false,
+          },
+          value: {
+            show: false,
+          },
+        },
+      },
+    },
+    colors: ["#1ab7ea", "#0084ff", "#39539E", "#0077B5"],
     labels: label,
-    colors: ["#8b3845", "#008ff9", "#000000", "#00e495", "#ffffff"],
+    legend: {
+      show: true,
+      floating: true,
+      fontSize: "16px",
+      position: "left",
+      offsetX: 10,
+      offsetY: 10,
+      labels: {
+        useSeriesColors: true,
+      },
+      markers: {
+        size: 0,
+      },
+      formatter: function (seriesName, opts) {
+        return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex];
+      },
+      itemMargin: {
+        vertical: 3,
+      },
+    },
     responsive: [
       {
         breakpoint: 480,
         options: {
-          chart: {
-            width: 400,
-          },
           legend: {
-            position: "bottom",
+            show: false,
           },
         },
       },
     ],
   };
+
   const series = lenData;
   return (
     <div>
       <ReactApexChart
-        style={{ marginTop: "90px", marginLeft: "7%" }}
+        style={{ marginTop: "0px", marginLeft: "7%" }}
         options={options}
         series={series}
-        type="pie"
-        height={440}
+        type="radialBar"
+        height={400}
       />
     </div>
   );
