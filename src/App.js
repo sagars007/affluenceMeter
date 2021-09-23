@@ -11,6 +11,7 @@ import {
 import Home from "./component/home";
 import Second from "./component/Second";
 import DomainConatiner1 from "./component/DomainConatiner1";
+import EmpIndex from "./component/EmploymentDomain/EmpIndex";
 export default function App() {
   console.log("app");
 
@@ -21,6 +22,7 @@ export default function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/knowMore" component={Second} />
           <Route exact path="/domain1" component={DomainConatiner1} />
+          <Route exact path="/domain2" component={EmpIndex} />
         </Switch>
       </Router>
     </div>
