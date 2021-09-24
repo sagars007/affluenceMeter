@@ -4,7 +4,7 @@ import ReactApexChart from "react-apexcharts";
 export default function BarChart(props) {
   let { XCOLOR, YCOLOR, BCOLOR4, YDIVISION } = props;
   let series = [];
-  props.labels.forEach((elem, index) => {
+  props.YDIVISION.forEach((elem, index) => {
     let obj = { name: YDIVISION[index], data: props.data[index] };
     series.push(obj);
   });
