@@ -254,7 +254,10 @@ export default class TierComponent extends Component {
         >
           <GeneralHeaders>Explain Here</GeneralHeaders>
           <GeneralDiv style={{ height: "80%", background: "inherit" }}>
-            <YoutubeEmbed embedId="rokGy0huYEA" />
+            <YoutubeEmbed
+              link={"https://www.youtube.com/embed/"}
+              embedId="rokGy0huYEA"
+            />
           </GeneralDiv>
         </LargeBarGraph>
       </div>
