@@ -120,8 +120,36 @@ export default class EmpIndex extends Component {
               YDIVISION={labels1}
             ></BarChart>
           </LargeBarGraph>
-          <LargeConatiner>
+          <LargeConatiner style={{ height: "auto", minHeight: "500px" }}>
             <GeneralHeaders>Know How Our Model Works</GeneralHeaders>
+            <GeneralDiv
+              style={{
+                background: "inherit",
+                boxShadow: "none",
+                marginBottom: "50px",
+                fontFamily: `"Heebo", sans-serif`,
+                fontSize: "18px",
+              }}
+              padding={"30px"}
+            >
+              For work experience domain we have divided user’s information into
+              5 categories namely salary/per month, company, position they hold,
+              work experience in years and gap/unemployed years. <br /> <br />
+              The analysis and survey were done on 150 middle class people
+              varying from Rs.10000 income per month to 130000 per month. <br />{" "}
+              <br /> As one’s income defines their standard of their living and
+              capabilities so income plays huge role in credit analysis. <br />{" "}
+              <br />
+              As new and unreliable corporates hire and fire people very easily,
+              one’s position and company can only decide their future and credit
+              worthiness. <br /> <br />
+              So, to make data more analytical and simple designation and
+              company are divided into 4 tiers, tier 1 to 4, 1 being the best.{" "}
+              <br /> <br />
+              Division of tiers is done on the basis of market value of the
+              company and its stability. Government job roles and departments
+              are also considered under this. <br /> <br />
+            </GeneralDiv>
           </LargeConatiner>
           <GeneralHeaders style={{ marginTop: "80px" }}>
             Choose Band And Visulaise Data

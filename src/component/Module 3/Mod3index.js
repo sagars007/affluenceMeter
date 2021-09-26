@@ -113,8 +113,39 @@ export default class Mod3Index extends Component {
               YDIVISION={labels1}
             ></BarChart>
           </LargeBarGraph>
-          <LargeConatiner>
+          <LargeConatiner style={{ height: "auto", minHeight: "500px" }}>
             <GeneralHeaders>Know How Our Model Works</GeneralHeaders>
+            <GeneralDiv
+              style={{
+                background: "inherit",
+                boxShadow: "none",
+                marginBottom: "50px",
+                fontFamily: `"Heebo", sans-serif`,
+                fontSize: "18px",
+              }}
+              padding={"30px"}
+            >
+              Though one’s activeness on social media rarely decides their
+              credibility in market. Some factors could be considered while
+              evaluating one’s social media. <br /> <br />
+              Platforms like LinkedIn could tell user’s quality of network and
+              social media reach. <br /> <br />
+              Under this domain factors like connection quality and quantity,
+              Frequency of posts, frequency of check-ins to
+              cafes/restaurant/malls/clubs/airport, brand tie-up or sponsorship
+              are taken into account. <br /> <br />
+              For this data survey of 150 people from varying background was
+              done. Varying data from only 100 connections to 5000 connections
+              is being evaluated and scoring is done. <br /> <br />
+              Frequency of posts is done on monthly basis from 0 posts to 30
+              posts in a month. Likewise, check-ins observed in past month is
+              considered from as low as 0 to 10 check-in per month.
+              <br /> <br /> Generally middle class people don’t have any
+              sponsorship or brand tie-up so only 0.03% of total score is
+              accountable for awarding someone who has sponsorship.
+              <br />
+              <br />
+            </GeneralDiv>
           </LargeConatiner>
           <GeneralHeaders style={{ marginTop: "80px" }}>
             Choose Band And Visulaise Data
