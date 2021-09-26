@@ -6,13 +6,13 @@ import {
   LargeBarGraph,
   LargeConatiner,
 } from "./styles/app.styles";
-
 import { eduTier } from "../dataMiddleware/EduData";
 import { filterEduCredit } from "./Middleware/EduFunction";
 import FreqencyBoxComponent from "./generalComponent/FreqencyBoxComponent";
 import EducationBarChart from "./Charts/EducationBarChart";
 import TierComponent from "./TierComponent";
 import PageHeader from "./generalComponent/PageHeader";
+import { GeneralDiv } from "./styles/education.styles";
 
 export default function DomainConatiner1() {
   const eduVscredTier1 = filterEduCredit(1, eduTier);
@@ -62,8 +62,39 @@ export default function DomainConatiner1() {
             title="College Tier Vs CreditScore"
           />
         </LargeBarGraph>
-        <LargeConatiner>
+        <LargeConatiner style={{ height: "auto", minHeight: "500px" }}>
           <GeneralHeaders>Know How Our Model Works</GeneralHeaders>
+          <GeneralDiv
+            style={{
+              background: "inherit",
+              boxShadow: "none",
+              marginBottom: "50px",
+              fontFamily: `"Heebo", sans-serif`,
+              fontSize: "18px",
+            }}
+            padding={"30px"}
+          >
+            For education domain for credit rating and analysis we have divided
+            it into 4 categories namely college tier, course, graduation marks
+            and internship/experience. <br /> <br />
+            In India colleges are divided into several tiers based on their
+            teaching, research, infrastructure and outcome. We have taken this
+            into account as for a student/new employee who seek for credit score
+            college will play crucial role in determining their credibility.{" "}
+            <br /> <br />
+            Similarly, courses which student/user are opting for also determines
+            their career growth and outcome. For example, master degrees such as
+            MBA, MSC, MD have huge scope in current market. Likewise, all the
+            possible courses are categorized into 4 sections from 1 to 4, 1
+            being best.
+            <br />
+            <br />
+            Student’s performance in college can only be measured by marks/ CGPA
+            they achieve during their course which again plays a vital role
+            during credit rating. We have also taken internship/any experience
+            as a criteria while evaluating credit as it indicates one’s
+            performance and experience in corporates and market.
+          </GeneralDiv>
         </LargeConatiner>
         <GeneralHeaders style={{ marginTop: "80px" }}>
           Choose Tier And Visulaise Data

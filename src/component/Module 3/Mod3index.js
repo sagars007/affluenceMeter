@@ -24,6 +24,17 @@ import { GeneralDiv } from "../styles/education.styles";
 import YoutubeEmbed from "../YouTube";
 
 export default class Mod3Index extends Component {
+  constructor() {
+    super();
+    this.state = {
+      domain: 0,
+    };
+  }
+  toggleDomain = (e) => {
+    this.setState({
+      domain: e.target.value,
+    });
+  };
   render() {
     const band1 = filterBand("AA");
     const band2 = filterBand("A");
@@ -112,7 +123,7 @@ export default class Mod3Index extends Component {
             style={{ marginTop: "20px", fontSize: "20px", color: "#8F8F8F" }}
           >
             Currently Visulaising{" "}
-            <select className="drpDwn">
+            <select className="drpDwn" onChange={(e) => this.toggleDomain(e)}>
               <option value="0">AA</option>
               <option value="1">A</option>
               <option value="2">BB</option>
@@ -123,7 +134,7 @@ export default class Mod3Index extends Component {
           <FrameworkDiv1
             title1={"No Of Connection Vs Band Division"}
             data={XY1}
-            pieData={XYAxsis1[0]}
+            pieData={XYAxsis1[this.state.domain]}
             data1={XYAxsis1}
             label1={labels}
             label2={labels1}
