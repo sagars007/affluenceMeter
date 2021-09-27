@@ -13,6 +13,7 @@ import EducationBarChart from "./Charts/EducationBarChart";
 import TierComponent from "./TierComponent";
 import PageHeader from "./generalComponent/PageHeader";
 import { GeneralDiv } from "./styles/education.styles";
+import Table from "./Table";
 
 export default function DomainConatiner1() {
   const eduVscredTier1 = filterEduCredit(1, eduTier);
@@ -62,13 +63,16 @@ export default function DomainConatiner1() {
             title="College Tier Vs CreditScore"
           />
         </LargeBarGraph>
-        <LargeConatiner style={{ height: "auto", minHeight: "500px" }}>
+        <LargeConatiner
+          style={{ height: "auto", minHeight: "920px", paddingBottom: "50px" }}
+        >
           <GeneralHeaders>Know How Our Model Works</GeneralHeaders>
           <GeneralDiv
             style={{
               background: "inherit",
               boxShadow: "none",
-              marginBottom: "50px",
+              minheight: "70%",
+              height: "auto",
               fontFamily: `"Heebo", sans-serif`,
               fontSize: "18px",
             }}
@@ -94,6 +98,17 @@ export default function DomainConatiner1() {
             during credit rating. We have also taken internship/any experience
             as a criteria while evaluating credit as it indicates one’s
             performance and experience in corporates and market.
+          </GeneralDiv>
+          <GeneralDiv
+            style={{
+              height: "200px",
+              width: "50%",
+              background: "inherit",
+              boxShadow: "none",
+              marginLeft: "24%",
+            }}
+          >
+            <Table />
           </GeneralDiv>
         </LargeConatiner>
         <GeneralHeaders style={{ marginTop: "80px" }}>

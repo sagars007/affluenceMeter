@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import BarChart from "../EmploymentDomain/Chart/BarChart";
 import PieChart from "../EmploymentDomain/Chart/PieChart";
 import { XCOLOR4 } from "../EmploymentDomain/colors.style";
-import { LargeBarGraph, GeneralHeaders } from "../styles/app.styles";
+import { LargeBarGraph, GeneralHeaders, COLORS } from "../styles/app.styles";
 import { GeneralDiv } from "../styles/education.styles";
 export default class FrameworkDiv1 extends Component {
   render() {
@@ -51,7 +51,17 @@ export default class FrameworkDiv1 extends Component {
                 background: "inherit",
               }}
             >
-              <GeneralHeaders>Explain Here</GeneralHeaders>
+              <GeneralDiv
+                style={{
+                  height: "100%",
+                  background: "inherit",
+                  boxShadow: "none",
+                  color: COLORS.color5,
+                }}
+                padding={"1%"}
+              >
+                {this.props.pieContent}
+              </GeneralDiv>
             </GeneralDiv>
             <GeneralDiv
               width={"100%"}

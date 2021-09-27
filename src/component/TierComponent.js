@@ -238,7 +238,7 @@ export default class TierComponent extends Component {
           padding={"1%"}
         >
           <GeneralHeaders>
-            Mark Distribution Vs redit Distribution
+            Mark Distribution Vs Credit Distribution
           </GeneralHeaders>
           <GeneralDiv
             style={{
@@ -291,7 +291,8 @@ export default class TierComponent extends Component {
                 height: "80%",
                 background: "inherit",
                 boxShadow: "none",
-                marginTop: "10px",
+                marginTop: "30px",
+                fontSize: "16px",
               }}
             >
               It shows frequency division of no of internship done by the user

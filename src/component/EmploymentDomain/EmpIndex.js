@@ -19,8 +19,10 @@ import {
   LargeBarGraph,
   GeneralHeaders,
   LargeConatiner,
+  COLORS,
 } from "../styles/app.styles";
 import { GeneralDiv } from "../styles/education.styles";
+import Table from "../EmploymentDomain/Table";
 import YoutubeEmbed from "../YouTube";
 import BarChart from "./Chart/BarChart";
 import { BCOLOR4, YCOLOR4, XCOLOR4, YCOLOR6 } from "./colors.style";
@@ -120,7 +122,13 @@ export default class EmpIndex extends Component {
               YDIVISION={labels1}
             ></BarChart>
           </LargeBarGraph>
-          <LargeConatiner style={{ height: "auto", minHeight: "500px" }}>
+          <LargeConatiner
+            style={{
+              height: "auto",
+              minHeight: "1020px",
+              paddingBottom: "50px",
+            }}
+          >
             <GeneralHeaders>Know How Our Model Works</GeneralHeaders>
             <GeneralDiv
               style={{
@@ -149,6 +157,17 @@ export default class EmpIndex extends Component {
               Division of tiers is done on the basis of market value of the
               company and its stability. Government job roles and departments
               are also considered under this. <br /> <br />
+            </GeneralDiv>
+            <GeneralDiv
+              style={{
+                height: "200px",
+                width: "50%",
+                background: "inherit",
+                boxShadow: "none",
+                marginLeft: "24%",
+              }}
+            >
+              <Table />
             </GeneralDiv>
           </LargeConatiner>
           <GeneralHeaders style={{ marginTop: "80px" }}>
@@ -180,7 +199,40 @@ export default class EmpIndex extends Component {
             YCOLOR={YCOLOR4}
             BCOLOR={BCOLOR4}
             title2={"Years of Experience Vs Band Division"}
+            pieContent={`The pie chart on left hand side shows salary wise frequency division for selected tier of rating. For example there are 24 individuals having salary more than 90,000 in tier AA. This will help us in understanding salary divion of user in particular tier `}
           ></FrameworkDiv1>
+          <GeneralDiv
+            style={{
+              height: "auto",
+              minHeight: "150px",
+              marginLeft: "11%",
+              borderRadius: "20px",
+            }}
+            width={"80%"}
+            padding={"1%"}
+          >
+            <GeneralHeaders>
+              Years Of Experience Vs Band Distribution
+            </GeneralHeaders>
+            <GeneralDiv
+              style={{
+                height: "10%",
+                background: "inherit",
+                boxShadow: "none",
+                color: COLORS.color1,
+                marginTop: "10px",
+              }}
+            >
+              The above Bar graph shows frequecy distribution of user's years of
+              experience(Job experience) for each band rating. For eample For
+              band AA 46% of the user's have more than 7.5 years of experience.
+              This graph helps in understanding the realtion between one's job
+              experience and Band rating.It is evident that higher job
+              experience can give you higher rating but it is not the sole
+              factor in scoring in determining your rating
+            </GeneralDiv>
+          </GeneralDiv>
+
           <FrameworkDiv2
             title={"Position Vs Rating"}
             data={XY3}
@@ -189,6 +241,11 @@ export default class EmpIndex extends Component {
             XCOLOR={XCOLOR4}
             YCOLOR={YCOLOR4}
             BCOLOR={BCOLOR4}
+            content={`The given graph shows frequency wise division of position for each band. Here position refers to the designation of user.
+            So we have devided designation of user and devided it into 4 band numbered 1-4.Here number 1 is the top tier and 4 is the bottom tier.
+            So from the graph we can understand that most individuals who fall into rating 1 and 2 fall in band AA and A. So holding good position in
+            your company/office can help you get better rating 
+            `}
           ></FrameworkDiv2>
           <FrameworkDiv2
             title={"Company Vs Rating"}
@@ -198,7 +255,12 @@ export default class EmpIndex extends Component {
             XCOLOR={XCOLOR4}
             YCOLOR={YCOLOR4}
             BCOLOR={BCOLOR4}
+            content={`
+            The graph shows frequency wise division of comapny rating and final band rating. As explained earlier we have devided company into
+            4 tier rating from 1 to 4 here 1 being the highest. 
+            `}
           ></FrameworkDiv2>
+
           <FrameworkDiv2
             title={"Unemployment Years Vs Rating"}
             data={XY5}

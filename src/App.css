@@ -413,3 +413,36 @@ img {
   padding: 1%;
   outline: none;
 }
+
+.table {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  width: auto;
+}
+.trow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.cell {
+  min-height: 40px;
+  width: 50%;
+  border: 2px solid #8b3845;
+  font-size: 14px;
+  border-left: 0px;
+  border-top: 0px;
+  align-items: center;
+  box-sizing: content-box;
+  color: snow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell2 {
+  border-right: 0px;
+}

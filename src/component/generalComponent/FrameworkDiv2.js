@@ -34,7 +34,18 @@ export default function FrameworkDiv2(props) {
           padding={"2%"}
           style={{ background: "inherit" }}
         >
-          <GeneralHeaders>Explain Here</GeneralHeaders>
+          <GeneralHeaders>{title}</GeneralHeaders>
+          <GeneralDiv
+            style={{
+              height: "80%",
+              background: "inherit",
+              boxShadow: "none",
+              marginTop: "30px",
+              fontSize: "18px",
+            }}
+          >
+            {props.content}
+          </GeneralDiv>
         </GeneralDiv>
       </LargeBarGraph>
     </div>
