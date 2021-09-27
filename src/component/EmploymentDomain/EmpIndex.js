@@ -257,7 +257,7 @@ export default class EmpIndex extends Component {
             BCOLOR={BCOLOR4}
             content={`
             The graph shows frequency wise division of comapny rating and final band rating. As explained earlier we have devided company into
-            4 tier rating from 1 to 4 here 1 being the highest. 
+            4 tier rating from 1 to 4 here 1 being the highest. Higher the rating of comapny higher the chances of getting AA band rating
             `}
           ></FrameworkDiv2>
 
