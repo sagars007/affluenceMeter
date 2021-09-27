@@ -62,7 +62,7 @@ export default class landing extends Component {
         
           <div id="text1">
             <p className="subtitle" className="col">
-              Radioactive is here
+              Radioactive is cdcdcdeacdedeqcfe
             </p>
             <h1 className="title">
               <div className="col flexMe">
