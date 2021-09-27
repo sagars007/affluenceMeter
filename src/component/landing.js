@@ -59,10 +59,10 @@ export default class landing extends Component {
             },
           }}
         />
-        <div className="content">
+        
           <div id="text1">
             <p className="subtitle" className="col">
-              Radioactive is here
+              Radioactive is cdcdcdeacdedeqcfe
             </p>
             <h1 className="title">
               <div className="col flexMe">
@@ -70,7 +70,7 @@ export default class landing extends Component {
                 <div>of trust</div>
               </div>
             </h1>
-          </div>
+          
         </div>
         <Link to="/knowMore">
           {" "}
