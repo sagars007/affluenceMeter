@@ -34,7 +34,6 @@ export default class home extends Component {
     tl.fromTo(".bigText", { opacity: 0 }, { opacity: 1, duration: 1 });
   }
   render() {
-    console.log("Home");
     return (
       <div>
         <section className="landing">

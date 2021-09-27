@@ -17,7 +17,6 @@ export default class Intro extends Component {
             </div>
           </div>
         </div>
-        <div className="slider"></div>
       </div>
     );
   }

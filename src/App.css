@@ -128,13 +128,13 @@ body {
   /* overflow: hidden; */
 }
 
-.newdiv1{
+.newdiv1 {
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-@media (-webkit-max-device-pixel-ratio: 1.50) {
+@media (-webkit-max-device-pixel-ratio: 1.5) {
   body {
     width: 100%;
     /*height: auto;*/
@@ -193,7 +193,7 @@ img {
 
   /* font-family: "Heebo", sans-serif; */
 }
-@media (-webkit-max-device-pixel-ratio: 1.50) { 
+@media (-webkit-max-device-pixel-ratio: 1.5) {
   #text1 {
     position: fixed;
     top: 330px;
@@ -203,7 +203,7 @@ img {
     width: 900px;
     z-index: 1;
     font-family: "Roboto", sans-serif;
-  
+
     /* font-family: "Heebo", sans-serif; */
   }
 }
@@ -235,7 +235,7 @@ img {
   z-index: 0;
 }
 
-@media (-webkit-max-device-pixel-ratio: 1.50) { 
+@media (-webkit-max-device-pixel-ratio: 1.5) {
   .img-3 {
     position: fixed;
     top: 520px;
@@ -301,29 +301,28 @@ img {
   cursor: pointer;
 }
 
-@media (-webkit-max-device-pixel-ratio: 1.50) { 
-.btnDiv {
-  display: flex;
-  position: fixed;
-  top: 430px;
-  left: 40%;
-  height: 70px;
-  border-radius: 40px;
-  width: 300px;
-  background-color: rgb(255, 255, 255);
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  color: #000100;
-  /* padding: 10px; */
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+@media (-webkit-max-device-pixel-ratio: 1.5) {
+  .btnDiv {
+    display: flex;
+    position: fixed;
+    top: 430px;
+    left: 40%;
+    height: 70px;
+    border-radius: 40px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: #000100;
+    /* padding: 10px; */
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 }
-}
-
 
 .secondLarge {
   /* background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg"); */
@@ -359,7 +358,7 @@ img {
   font-family: "Poppins", sans-serif;
 }
 
-@media (-webkit-max-device-pixel-ratio: 1.50) {
+@media (-webkit-max-device-pixel-ratio: 1.5) {
   .portContainer {
     height: 114vh;
     width: 100%;
@@ -527,4 +526,50 @@ img {
 
 .cell2 {
   border-right: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  #text1 {
+    width: 100vw;
+    font-size: 24px;
+  }
+  .title {
+    font-size: 80px;
+  }
+  .subtitle {
+    display: none;
+  }
+  .btnDiv {
+    left: 32%;
+  }
+  .img-3 {
+    right: -26px;
+    transform: translateY(-95%);
+  }
+}
+@media only screen and (max-width: 678px) {
+  .title {
+    font-size: 60px;
+  }
+  #text1 {
+    position: fixed;
+    top: 250px;
+  }
+  .btnDiv {
+    top: 400px;
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .title {
+    font-size: 45px;
+  }
+  #text1 {
+    position: fixed;
+    top: 200px;
+  }
+  .btnDiv {
+    top: 350px;
+    left: 15%;
+  }
 }
