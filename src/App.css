@@ -57,7 +57,7 @@ main {
 
 .slider {
   background: rgb(97, 105, 109);
-  position: fixed;
+  position: fixed;  
   width: 100%;
   top: 0;
   left: 0;
