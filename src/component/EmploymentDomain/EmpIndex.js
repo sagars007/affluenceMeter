@@ -171,12 +171,12 @@ export default class EmpIndex extends Component {
             </GeneralDiv>
           </LargeConatiner>
           <GeneralHeaders style={{ marginTop: "80px" }}>
-            Choose Band And Visulaise Data
+            Choose Band And Visualise Data
           </GeneralHeaders>
           <GeneralHeaders
             style={{ marginTop: "20px", fontSize: "20px", color: "#8F8F8F" }}
           >
-            Currently Visulaising{" "}
+            Currently Visualising{" "}
             <select className="drpDwn" onChange={(e) => this.toggleBand(e)}>
               <option value="0">AA</option>
               <option value="1">A</option>
@@ -229,7 +229,7 @@ export default class EmpIndex extends Component {
               This graph helps in understanding the realtion between one's job
               experience and Band rating.It is evident that higher job
               experience can give you higher rating but it is not the sole
-              factor in scoring in determining your rating
+              factor in scoring and determining your rating.
             </GeneralDiv>
           </GeneralDiv>
 
@@ -242,9 +242,9 @@ export default class EmpIndex extends Component {
             YCOLOR={YCOLOR4}
             BCOLOR={BCOLOR4}
             content={`The given graph shows frequency wise division of position for each band. Here position refers to the designation of user.
-            So we have devided designation of user and devided it into 4 band numbered 1-4.Here number 1 is the top tier and 4 is the bottom tier.
+            So we have devided designation of user and devided it into 4 band numbered 1-4. Here number 1 is the top tier and 4 is the bottom tier.
             So from the graph we can understand that most individuals who fall into rating 1 and 2 fall in band AA and A. So holding good position in
-            your company/office can help you get better rating 
+            your company/office can help you get better rating.
             `}
           ></FrameworkDiv2>
           <FrameworkDiv2

@@ -112,7 +112,7 @@ export default function DomainConatiner1() {
           </GeneralDiv>
         </LargeConatiner>
         <GeneralHeaders style={{ marginTop: "80px" }}>
-          Choose Tier And Visulaise Data
+          Choose Tier And Visualise Data
         </GeneralHeaders>
         <TierComponent
           data={[

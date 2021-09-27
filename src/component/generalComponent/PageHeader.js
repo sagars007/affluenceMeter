@@ -19,7 +19,7 @@ export default class PageHeader extends Component {
           </Link>
           {this.props.title}
         </Header>
-        <DomainHeader>Ananlytics and Much More</DomainHeader>
+        <DomainHeader>Analytics and much more</DomainHeader>
       </div>
     );
   }
