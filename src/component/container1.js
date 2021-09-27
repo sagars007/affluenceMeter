@@ -13,12 +13,10 @@ const Section = styled.section`
   justify-content: center;
   align-items: center;
   background: #131313;
-  @media (-webkit-max-device-pixel-ratio: 1.50) { 
+  @media (-webkit-max-device-pixel-ratio: 1.5) {
     background: #000;
   }
 `;
-
-
 
 const Container = styled.div`
   display: grid;
@@ -112,21 +110,23 @@ const Conatiner = () => {
   };
 
   return (
-    <Section>
+    <Section id="secFirst">
       <Container>
         <ColumnLeft>
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
+            className="c2Ttl"
           >
             Welcome to Team Radioactive.
-            </motion.h1>
-            <motion.h1
+          </motion.h1>
+          <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-          > 
+            className="c2Ttl"
+          >
             Affluence rating
           </motion.h1>
           <motion.p
@@ -134,10 +134,11 @@ const Conatiner = () => {
             initial="hidden"
             animate="visible"
             transition={{ duration: 1 }}
+            className="c2Ttl"
           >
             Explore Each Domain
           </motion.p>
-          <ButtonContainer>
+          <ButtonContainer className="grpBtn">
             <Link to="/domain1">
               <Button
                 whileHover={{ scale: 1.05 }}
@@ -200,7 +201,7 @@ const Conatiner = () => {
             </Button>
           </ButtonContainer>
         </ColumnLeft>
-        <ColumnRight>
+        <ColumnRight id="clRight">
           <Image
             src={PlanetOne}
             alt="planet"
