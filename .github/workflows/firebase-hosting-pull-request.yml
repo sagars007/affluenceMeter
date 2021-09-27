@@ -13,5 +13,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_AFFLUENCEMETER_A7E4B }}'
-          projectId: affluencemeter-a7e4b
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_AFFLUENCEMETER_RADIOACTIVE }}'
+          projectId: affluencemeter-radioactive
