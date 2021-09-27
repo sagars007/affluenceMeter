@@ -160,12 +160,19 @@ export default class TierComponent extends Component {
             boxShadow: "none",
             display: "flex",
             flexDirection: "row",
-            height: "600px",
+            minHeight: "600px",
+            height: "auto",
 
             justifyContent: "space-between",
           }}
+          className="pieHolder"
         >
-          <GeneralDiv width={"40%"} padding={"2%"} radius={"20px"}>
+          <GeneralDiv
+            width={"40%"}
+            padding={"2%"}
+            radius={"20px"}
+            className="divLeft"
+          >
             <GeneralHeaders>
               Rating Wise Division Vs No. of People
             </GeneralHeaders>
@@ -187,6 +194,7 @@ export default class TierComponent extends Component {
               boxShadow: "none",
             }}
             width={"50%"}
+            className="divLeft"
           >
             <GeneralDiv
               width={"100%"}
@@ -209,8 +217,9 @@ export default class TierComponent extends Component {
                 padding={"5%"}
               >
                 The pie chart on left hand side shows rating wise division of
-                total no. of people in selected tier with the corresonding rating,
-                for example for tier A there are 4 users above 350 rating.
+                total no. of people in selected tier with the corresonding
+                rating, for example for tier A there are 4 users above 350
+                rating.
               </GeneralDiv>
             </GeneralDiv>
             <GeneralDiv
@@ -267,11 +276,18 @@ export default class TierComponent extends Component {
             boxShadow: "none",
             display: "flex",
             flexDirection: "row",
-            height: "600px",
+            minHeight: "600px",
+            height: "auto",
             justifyContent: "space-between",
           }}
+          className="pieHolder"
         >
-          <GeneralDiv width={"65%"} padding={"2%"} radius={"20px"}>
+          <GeneralDiv
+            width={"65%"}
+            padding={"2%"}
+            radius={"20px"}
+            className="divLeft"
+          >
             <GeneralHeaders>No Internship Vs Credit Rating</GeneralHeaders>
             {this.state.intern && (
               <EduBarChart2
@@ -285,6 +301,7 @@ export default class TierComponent extends Component {
             width={"30%"}
             padding={"2%"}
             style={{ background: "inherit" }}
+            className="divLeft"
           >
             <GeneralHeaders>No Internship Vs Credit Rating</GeneralHeaders>
             <GeneralDiv
@@ -300,8 +317,8 @@ export default class TierComponent extends Component {
               to the credit range they are falling in, these distribution vary
               with change in college tier. General trend which we can identify
               from these graph is that higher the no of internship higher will
-              be credit rating. For example those who have done 4 or
-              more internship have high affluence score. Those who have done 6
+              be credit rating. For example those who have done 4 or more
+              internship have high affluence score. Those who have done 6
               internhip and belong to tier 1 have rating higher than 300
             </GeneralDiv>
           </GeneralDiv>

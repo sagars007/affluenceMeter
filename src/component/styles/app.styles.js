@@ -78,16 +78,17 @@ export const GraphContainerBody = styled.div`
 `;
 
 export const FrequencyDiv = styled.div`
-  height: 180px;
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  margin-left: 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 `;
 
 export const FrequencyBox = styled.div`
-  height: 50%;
+  height: 120px;
   width: 200px;
   padding: 10%;
   margin-top: 10%;
@@ -96,6 +97,9 @@ export const FrequencyBox = styled.div`
   border-radius: 10px;
   display: flex;
   flex-direction: row;
+  @media only screen and (max-width: 900px) {
+    width: 250px;
+  }
 `;
 
 export const FrequencyBoxLeft = styled.div`

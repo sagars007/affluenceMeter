@@ -57,7 +57,7 @@ main {
 
 .slider {
   background: rgb(97, 105, 109);
-  position: fixed;  
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -555,6 +555,18 @@ img {
   #secFirst {
     height: 150vh;
   }
+  #lrgContEdu {
+    min-height: 1240px !important;
+  }
+  .pieHolder {
+    width: 80% !important;
+    margin-bottom: 100px !important;
+
+    flex-wrap: wrap !important;
+  }
+  .divLeft {
+    width: 100% !important;
+  }
 }
 @media only screen and (max-width: 400px) {
   .title {
@@ -567,6 +579,9 @@ img {
   .img-3 {
     right: -23px;
     transform: translateY(-125%);
+  }
+  #lrgContEdu {
+    min-height: 1957px !important;
   }
 }
 @media only screen and (max-width: 678px) {
@@ -583,6 +598,9 @@ img {
   }
   .lrgTXt2 {
     top: 20%;
+  }
+  #lrgContEdu {
+    min-height: 1757px !important;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -622,6 +640,9 @@ img {
   .img-3 {
     right: -23px;
     transform: translateY(-125%);
+  }
+  #lrgContEdu {
+    min-height: 2457px !important;
   }
 }
 @media only screen and (max-width: 360px) {
