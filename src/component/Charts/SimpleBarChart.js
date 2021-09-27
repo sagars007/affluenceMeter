@@ -1,5 +1,7 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import { COLORS, GeneralHeaders } from "../styles/app.styles";
+import { GeneralDiv } from "../styles/education.styles";
 export default function SimpleBarChart(props) {
   let mark1 = [],
     mark2 = [],
@@ -100,6 +102,20 @@ export default function SimpleBarChart(props) {
   };
   return (
     <div>
+      <GeneralDiv
+        style={{
+          height: "40px",
+          background: "inherit",
+          boxShadow: "none",
+          color: COLORS.color5,
+          fontSize: "20px",
+          textAlign: "center",
+        }}
+        width={"100%"}
+        padding={"5%"}
+      >
+        Mark Distribution vs Credit
+      </GeneralDiv>
       <ReactApexChart
         options={options}
         type="bar"

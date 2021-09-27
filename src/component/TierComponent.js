@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PieChart from "./Charts/PieChart";
 import { eduTier } from "../dataMiddleware/EduData";
-import { GeneralHeaders, LargeBarGraph } from "./styles/app.styles";
+import { COLORS, GeneralHeaders, LargeBarGraph } from "./styles/app.styles";
 import { GeneralDiv } from "./styles/education.styles";
 import SimpleBarChart from "./Charts/SimpleBarChart";
 import EduBarChart2 from "./Charts/eduBarChart2";
@@ -198,7 +198,19 @@ export default class TierComponent extends Component {
                 background: "inherit",
               }}
             >
-              <GeneralHeaders>Explain Here</GeneralHeaders>
+              <GeneralDiv
+                style={{
+                  height: "100%",
+                  background: "inherit",
+                  boxShadow: "none",
+                  color: COLORS.color5,
+                }}
+                padding={"5%"}
+              >
+                The pie chart on left hand side shows rating wise division of
+                total no of people in selected tier with the corresonding rating
+                for example for tier A there are 4 user's above 350 rating.
+              </GeneralDiv>
             </GeneralDiv>
             <GeneralDiv
               width={"100%"}
@@ -215,6 +227,38 @@ export default class TierComponent extends Component {
             </GeneralDiv>
           </GeneralDiv>
         </LargeBarGraph>
+        <GeneralDiv
+          style={{
+            height: "auto",
+            minHeight: "150px",
+            marginLeft: "11%",
+            borderRadius: "20px",
+          }}
+          width={"80%"}
+          padding={"1%"}
+        >
+          <GeneralHeaders>
+            Mark Distribution Vs redit Distribution
+          </GeneralHeaders>
+          <GeneralDiv
+            style={{
+              height: "10%",
+              background: "inherit",
+              boxShadow: "none",
+              color: COLORS.color1,
+              marginTop: "10px",
+            }}
+          >
+            This chart shows the mark wise distribution for each credit range.
+            For exmaple there are 2 users with 89 or above marks and 2 users
+            with marks ranging between 79 to 89 for credit rating 350 and above
+            for tier 1 college. This helps us to understand the relationship
+            between marks ,tier of college and credit rating. This also
+            establishes the trend that tier 1 student's dont have rating lower
+            than 200
+          </GeneralDiv>
+        </GeneralDiv>
+
         <LargeBarGraph
           style={{
             marginTop: "80px",
@@ -241,25 +285,30 @@ export default class TierComponent extends Component {
             padding={"2%"}
             style={{ background: "inherit" }}
           >
-            <GeneralHeaders>Explain Here</GeneralHeaders>
+            <GeneralHeaders>No Internship Vs Credit Rating</GeneralHeaders>
+            <GeneralDiv
+              style={{
+                height: "80%",
+                background: "inherit",
+                boxShadow: "none",
+                marginTop: "10px",
+              }}
+            >
+              It shows frequency division of no of internship done by the user
+              to the credit range they are falling in, these distribution vary
+              with change in college tier. General trend which we can identify
+              from these graph is that higher the no of internship higher will
+              be credit rating. For example most of whom , who have done 4 or
+              more internship have high affluence score. Those who have done 6
+              internhip and belong to tier 1 have rating higher than 300
+            </GeneralDiv>
           </GeneralDiv>
         </LargeBarGraph>
-        <LargeBarGraph
-          style={{
-            marginTop: "30px",
-            borderRadius: "30px",
-            height: "600px",
-            background: "inherit",
-          }}
-        >
-          <GeneralHeaders>Explain Here</GeneralHeaders>
-          <GeneralDiv style={{ height: "80%", background: "inherit" }}>
-            <YoutubeEmbed
-              link={"https://www.youtube.com/embed/"}
-              embedId="rokGy0huYEA"
-            />
-          </GeneralDiv>
-        </LargeBarGraph>
+
+        <YoutubeEmbed
+          link={"https://www.youtube.com/embed/"}
+          embedId="rokGy0huYEA"
+        />
       </div>
     );
   }

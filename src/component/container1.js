@@ -141,32 +141,38 @@ const Conatiner = () => {
                 Domain 1
               </Button>
             </Link>
-            <Button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{
-                scale: 0.95,
-                backgroundColor: "#67F6E7",
-                border: "none",
-                color: "#000",
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 1.5 } }}
-            >
-              Domain 2
-            </Button>
-            <Button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{
-                scale: 0.95,
-                backgroundColor: "#67F6E7",
-                border: "none",
-                color: "#000",
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 1.5 } }}
-            >
-              Domain 3
-            </Button>
+            <Link to="/domain2">
+              {" "}
+              <Button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{
+                  scale: 0.95,
+                  backgroundColor: "#67F6E7",
+                  border: "none",
+                  color: "#000",
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { duration: 1.5 } }}
+              >
+                Domain 2
+              </Button>
+            </Link>
+            <Link to="/domain3">
+              {" "}
+              <Button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{
+                  scale: 0.95,
+                  backgroundColor: "#67F6E7",
+                  border: "none",
+                  color: "#000",
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { duration: 1.5 } }}
+              >
+                Domain 3
+              </Button>
+            </Link>
             <Button
               whileHover={{ scale: 1.05 }}
               whileTap={{

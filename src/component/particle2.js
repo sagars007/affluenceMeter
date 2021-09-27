@@ -5,7 +5,7 @@ export default class particle2 extends Component {
     return (
       <div className="part">
         <Particles
-          height="700px"
+          height="100vh"
           //   width=""
           params={{
             particles: {

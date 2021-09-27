@@ -8,7 +8,7 @@ export default class Moon extends Component {
         <div className="btnMount">
           <button>Know More About Our Buisness Model</button>
         </div>
-        <img src={mount} />
+        {/* <img src={mount} /> */}
       </div>
     );
   }

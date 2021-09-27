@@ -208,22 +208,11 @@ export default class EmpIndex extends Component {
             YCOLOR={YCOLOR6}
             BCOLOR={BCOLOR4}
           ></FrameworkDiv2>
-          <LargeBarGraph
-            style={{
-              marginTop: "30px",
-              borderRadius: "30px",
-              height: "600px",
-              background: "inherit",
-            }}
-          >
-            <GeneralHeaders>Explain Here</GeneralHeaders>
-            <GeneralDiv style={{ height: "80%", background: "inherit" }}>
-              <YoutubeEmbed
-                embedId="rokGy0huYEA"
-                link={"https://www.youtube.com/embed/"}
-              />
-            </GeneralDiv>
-          </LargeBarGraph>
+
+          <YoutubeEmbed
+            embedId="rokGy0huYEA"
+            link={"https://www.youtube.com/embed/"}
+          />
         </Domain>
       </div>
     );
