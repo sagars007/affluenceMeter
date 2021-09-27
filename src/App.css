@@ -232,10 +232,11 @@ img {
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"); */
+/* set from bottom */
 .btnDiv {
   display: flex;
   position: fixed;
-  top: 600px;
+  top: 500px;
   left: 40%;
   height: 70px;
   border-radius: 40px;
@@ -283,7 +284,7 @@ img {
 .portContainer {
   height: 100vh;
   width: 100%;
-  background: #131313;
+  background: linear-gradient(#2b1055, #7597de);
   font-family: "Poppins", sans-serif;
 }
 .relMe {
