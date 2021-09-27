@@ -12,7 +12,7 @@ export default class Second extends Component {
   render() {
     console.log("Second");
     return (
-      <div>
+      <div className="newdiv1">
         <div className="secondLarge">
           <div className="lrgTXt2">
             {/* <div>Explore Cutting Edge Tech </div> */}
@@ -22,7 +22,7 @@ export default class Second extends Component {
         </div>
         <div className="portContainer">
           <Conatiner />
-          <Container2 />
+          
         </div>
       </div>
     );

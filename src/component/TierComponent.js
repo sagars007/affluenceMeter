@@ -161,6 +161,7 @@ export default class TierComponent extends Component {
             display: "flex",
             flexDirection: "row",
             height: "600px",
+            width: "100%",
             justifyContent: "space-between",
           }}
         >

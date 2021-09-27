@@ -60,6 +60,7 @@ export default class landing extends Component {
           }}
         />
 
+
         <div id="text1">
           <p className="subtitle" className="col">
             Radioactive is here
@@ -70,6 +71,7 @@ export default class landing extends Component {
               <div>of trust</div>
             </div>
           </h1>
+
         </div>
         <Link to="/knowMore">
           {" "}

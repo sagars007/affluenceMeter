@@ -109,6 +109,10 @@ export const LargeBarGraph = styled.div`
   background: ${COLORS.color4};
   width: 80%;
   margin-left: 10%;
+  @media (-webkit-max-device-pixel-ratio: 1.50) {
+    width: 90%;
+  margin-left: 4%;
+  }
   box-shadow: ${COLORS.shapdow};
   padding: 2%;
 `;

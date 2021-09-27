@@ -8,12 +8,17 @@ import PlanetFour from "./images/planets/planet-4.svg";
 import { Link } from "react-router-dom";
 
 const Section = styled.section`
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #131313;
+  @media (-webkit-max-device-pixel-ratio: 1.50) { 
+    background: #000;
+  }
 `;
+
+
 
 const Container = styled.div`
   display: grid;

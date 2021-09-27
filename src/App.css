@@ -120,11 +120,29 @@ button {
 html,
 body {
   width: 100%;
-  height: auto;
+  /*height: auto;*/
   background: #000100;
   color: white;
   overflow-x: hidden;
+  overflow-y: hidden;
   /* overflow: hidden; */
+}
+
+.newdiv1{
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+@media (-webkit-max-device-pixel-ratio: 1.50) {
+  body {
+    width: 100%;
+    /*height: auto;*/
+    background: #000;
+    color: white;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+  }
 }
 
 ul {
@@ -220,14 +238,14 @@ img {
 @media (-webkit-max-device-pixel-ratio: 1.50) { 
   .img-3 {
     position: fixed;
-    top: 450px;
+    top: 520px;
     right: 30px;
     transform: translateY(-40%);
     background: url("./component/images/back1-removebg-preview.png") no-repeat;
     background-position: center;
     background-size: cover;
     width: 200px;
-    height: 120px;
+    height: 160px;
     z-index: 0;
   }
 }
@@ -335,10 +353,19 @@ img {
 }
 
 .portContainer {
-  height: 100vh;
+  /*height: 100vh;*/
   width: 100%;
   background: linear-gradient(#2b1055, #7597de);
   font-family: "Poppins", sans-serif;
+}
+
+@media (-webkit-max-device-pixel-ratio: 1.50) {
+  .portContainer {
+    height: 114vh;
+    width: 100%;
+    background: #000;
+    font-family: "Poppins", sans-serif;
+  }
 }
 .relMe {
   position: relative;

@@ -86,7 +86,7 @@ export default class EmpIndex extends Component {
     const XY5 = graph1finalAxis(XYAxsis3D, 4, 6);
 
     return (
-      <div>
+      <div className = "newdiv1">
         <Domain>
           <PageHeader title={"Know How Employment Model works"}></PageHeader>
           <FrequencyDiv>

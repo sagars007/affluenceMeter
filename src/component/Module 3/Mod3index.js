@@ -75,7 +75,7 @@ export default class Mod3Index extends Component {
     const XY4 = graph1finalAxis(XYAxsis4, 4, 4);
 
     return (
-      <div>
+      <div className = "newdiv1">
         <Domain>
           <PageHeader
             title={"Know How Social Networking Model works"}
