@@ -175,6 +175,20 @@ img {
 
   /* font-family: "Heebo", sans-serif; */
 }
+@media (-webkit-max-device-pixel-ratio: 1.50) { 
+  #text1 {
+    position: fixed;
+    top: 330px;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color: white;
+    width: 900px;
+    z-index: 1;
+    font-family: "Roboto", sans-serif;
+  
+    /* font-family: "Heebo", sans-serif; */
+  }
+}
 
 .col {
   color: white;
@@ -201,6 +215,21 @@ img {
   width: 300px;
   height: 200px;
   z-index: 0;
+}
+
+@media (-webkit-max-device-pixel-ratio: 1.50) { 
+  .img-3 {
+    position: fixed;
+    top: 450px;
+    right: 30px;
+    transform: translateY(-40%);
+    background: url("./component/images/back1-removebg-preview.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 120px;
+    z-index: 0;
+  }
 }
 
 .overlay {
@@ -252,6 +281,30 @@ img {
   align-items: center;
   cursor: pointer;
 }
+
+@media (-webkit-max-device-pixel-ratio: 1.50) { 
+.btnDiv {
+  display: flex;
+  position: fixed;
+  top: 430px;
+  left: 40%;
+  height: 70px;
+  border-radius: 40px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: #000100;
+  /* padding: 10px; */
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+}
+
 
 .secondLarge {
   /* background-image: url("https://web-images.credcdn.in/_next/assets/images/home-page/money-matters-bg.jpg"); */
