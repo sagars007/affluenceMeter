@@ -74,7 +74,7 @@ export default function DomainConatiner1() {
             }}
             padding={"30px"}
           >
-            {/* For education domain for credit rating and analysis we have divided
+            For education domain for credit rating and analysis we have divided
             it into 4 categories namely college tier, course, graduation marks
             and internship/experience. <br /> <br />
             In India colleges are divided into several tiers based on their
@@ -93,7 +93,7 @@ export default function DomainConatiner1() {
             they achieve during their course which again plays a vital role
             during credit rating. We have also taken internship/any experience
             as a criteria while evaluating credit as it indicates one’s
-            performance and experience in corporates and market. */}
+            performance and experience in corporates and market.
           </GeneralDiv>
         </LargeConatiner>
         <GeneralHeaders style={{ marginTop: "80px" }}>
