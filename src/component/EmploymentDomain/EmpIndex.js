@@ -269,6 +269,11 @@ export default class EmpIndex extends Component {
             XCOLOR={XCOLOR4}
             YCOLOR={YCOLOR6}
             BCOLOR={BCOLOR4}
+            content={`
+            The graph shows the mapping between years that an individual has been unemployed and band division.
+            For example most of whom who fall into band AA have never been unemployed  or have a gap year of just 1 or 2 years.
+            For band AA 39% of people have never been unemployed. Hence lower years of unemployment can help improve your Affluence Score
+            `}
           ></FrameworkDiv2>
 
           <YoutubeEmbed
