@@ -14,6 +14,7 @@ import {
   SSreturnAllBandWithDivision3,
 } from "../Middleware/SocialNet";
 import {
+  COLORS,
   Domain,
   FrequencyDiv,
   GeneralHeaders,
@@ -75,7 +76,7 @@ export default class Mod3Index extends Component {
     const XY4 = graph1finalAxis(XYAxsis4, 4, 4);
 
     return (
-      <div className = "newdiv1">
+      <div className="newdiv1">
         <Domain>
           <PageHeader
             title={"Know How Social Networking Model works"}
@@ -103,7 +104,7 @@ export default class Mod3Index extends Component {
             ></FreqencyBoxComponent>
           </FrequencyDiv>
           <LargeBarGraph>
-            <GeneralHeaders>Salary Vs Band Division</GeneralHeaders>
+            <GeneralHeaders>No of Connection Vs Band Division</GeneralHeaders>
             <BarChart
               labels={labels}
               data={XY1}
@@ -175,8 +176,41 @@ export default class Mod3Index extends Component {
             XCOLOR={XCOLOR4}
             YCOLOR={YCOLOR4}
             BCOLOR={BCOLOR4}
+            pieContent={`The given graph shows frequency wise division of total no of social media connection 
+            of the user.For the selected  band it shows frequency division of range of number of connection.
+            For example for band AA there are 9 individual who have more than 4000 connection.
+            `}
             title2={"No. of Posts Vs Band Division"}
           ></FrameworkDiv1>
+          <GeneralDiv
+            style={{
+              height: "auto",
+              minHeight: "150px",
+              marginLeft: "11%",
+              borderRadius: "20px",
+            }}
+            width={"80%"}
+            padding={"1%"}
+          >
+            <GeneralHeaders>No Of Posts Vs Band Division</GeneralHeaders>
+            <GeneralDiv
+              style={{
+                height: "10%",
+                background: "inherit",
+                boxShadow: "none",
+                color: COLORS.color1,
+                marginTop: "10px",
+              }}
+            >
+              This chart shows the relationship between user's social media
+              activity and affluence score. For each band we have devided user's
+              number of posts into 4 division (30-25,25-20,20-10,10-0). This
+              helps us understand the relationship between user's social media
+              activity and affluence score.Generaly a good user profile will
+              ensure that you dont get a bad rating but it's not a guarantee.
+            </GeneralDiv>
+          </GeneralDiv>
+
           <FrameworkDiv2
             title={"Check-Ins Vs Rating"}
             data={XY3}
@@ -185,6 +219,12 @@ export default class Mod3Index extends Component {
             XCOLOR={XCOLOR4}
             YCOLOR={YCOLOR4}
             BCOLOR={BCOLOR4}
+            content={`
+            The given graph shows the frequency division between total user check-ins and band score.
+            Here by check ins we mean user's travel history ,hotel visits etc. If individual travel a lot it is
+            a good indicator of individual's affluence. For example ,of all those who fall into band AA 82% has 
+            more than 5 check ins.
+            `}
           ></FrameworkDiv2>
           <FrameworkDiv2
             title={"Sponsorships Vs Rating"}
@@ -194,6 +234,11 @@ export default class Mod3Index extends Component {
             XCOLOR={XCOLOR4}
             YCOLOR={YCOLOR4}
             BCOLOR={BCOLOR4}
+            content={`
+            This graph shows the relationship between individuals sponsor deal and band score. If user has 
+            sponsorship deal with any brand it is a good indicator of affluence. Hence 63% of those who fall in
+            band AA have sponsorship deal. 
+            `}
           ></FrameworkDiv2>
 
           <YoutubeEmbed
