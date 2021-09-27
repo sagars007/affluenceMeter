@@ -26,7 +26,7 @@ export default function DomainConatiner1() {
   const sum3 = eduVscredTier3.reduce((a, b) => a + b, 0);
   const sum4 = eduVscredTier4.reduce((a, b) => a + b, 0);
   return (
-    <div>
+    <div className = "newdiv1">
       <Domain>
         <PageHeader title={"Know How Education Model Works"}></PageHeader>
         <FrequencyDiv>
