@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import mount from "../component/images/mount1.png";
 
 export default class Moon extends Component {
   render() {
