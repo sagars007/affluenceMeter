@@ -141,19 +141,19 @@ export default class Mod3Index extends Component {
               posts in a month. Likewise, check-ins observed in past month is
               considered from as low as 0 to 10 check-in per month.
               <br /> <br /> Generally middle class people don’t have any
-              sponsorship or brand tie-up so only 0.03% of total score is
+              sponsorship or brand tie-up, so only 0.03% of total score is
               accountable for awarding someone who has sponsorship.
               <br />
               <br />
             </GeneralDiv>
           </LargeConatiner>
           <GeneralHeaders style={{ marginTop: "80px" }}>
-            Choose Band And Visulaise Data
+            Choose Band And Visualise Data
           </GeneralHeaders>
           <GeneralHeaders
             style={{ marginTop: "20px", fontSize: "20px", color: "#8F8F8F" }}
           >
-            Currently Visulaising{" "}
+            Currently Visualising{" "}
             <select className="drpDwn" onChange={(e) => this.toggleDomain(e)}>
               <option value="0">AA</option>
               <option value="1">A</option>
@@ -163,7 +163,7 @@ export default class Mod3Index extends Component {
             Data
           </GeneralHeaders>
           <FrameworkDiv1
-            title1={"No Of Connection Vs Band Division"}
+            title1={"No. Of Connection Vs Band Division"}
             data={XY1}
             pieData={XYAxsis1[this.state.domain]}
             data1={XYAxsis1}
@@ -175,10 +175,10 @@ export default class Mod3Index extends Component {
             XCOLOR={XCOLOR4}
             YCOLOR={YCOLOR4}
             BCOLOR={BCOLOR4}
-            title2={"No of Posts  Vs Band Division"}
+            title2={"No. of Posts Vs Band Division"}
           ></FrameworkDiv1>
           <FrameworkDiv2
-            title={"CheckIns Vs Rating"}
+            title={"Check-Ins Vs Rating"}
             data={XY3}
             labelX={labels}
             labelY={labels3}

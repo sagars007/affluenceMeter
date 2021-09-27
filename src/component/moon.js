@@ -5,7 +5,7 @@ export default class Moon extends Component {
     return (
       <div className="mount1">
         <div className="btnMount">
-          <button>Know More About Our Buisness Model</button>
+          <button>Know More About Our Business Model</button>
         </div>
         {/* <img src={mount} /> */}
       </div>

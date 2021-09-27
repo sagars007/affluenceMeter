@@ -120,7 +120,14 @@ const Conatiner = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Welcome to Space
+            Welcome to Team Radioactive.
+            </motion.h1>
+            <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          > 
+            Affluence rating
           </motion.h1>
           <motion.p
             variants={fadeLeft}

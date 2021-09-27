@@ -144,7 +144,7 @@ export default class TierComponent extends Component {
         <GeneralHeaders
           style={{ marginTop: "20px", fontSize: "20px", color: "#8F8F8F" }}
         >
-          Currently Visulaising{" "}
+          Currently Visualising{" "}
           <select onChange={(e) => this.toggleTier(e)} className="drpDwn">
             <option value="1">Tier 1</option>
             <option value="2">Tier 2</option>
@@ -167,7 +167,7 @@ export default class TierComponent extends Component {
         >
           <GeneralDiv width={"40%"} padding={"2%"} radius={"20px"}>
             <GeneralHeaders>
-              Rating Wise Division Vs No of People
+              Rating Wise Division Vs No. of People
             </GeneralHeaders>
             {this.state.lenData && (
               <PieChart
@@ -209,8 +209,8 @@ export default class TierComponent extends Component {
                 padding={"5%"}
               >
                 The pie chart on left hand side shows rating wise division of
-                total no of people in selected tier with the corresonding rating
-                for example for tier A there are 4 user's above 350 rating.
+                total no. of people in selected tier with the corresonding rating,
+                for example for tier A there are 4 users above 350 rating.
               </GeneralDiv>
             </GeneralDiv>
             <GeneralDiv
@@ -255,7 +255,7 @@ export default class TierComponent extends Component {
             with marks ranging between 79 to 89 for credit rating 350 and above
             for tier 1 college. This helps us to understand the relationship
             between marks ,tier of college and credit rating. This also
-            establishes the trend that tier 1 student's dont have rating lower
+            establishes the trend that tier 1 students dont have rating lower
             than 200
           </GeneralDiv>
         </GeneralDiv>
@@ -300,7 +300,7 @@ export default class TierComponent extends Component {
               to the credit range they are falling in, these distribution vary
               with change in college tier. General trend which we can identify
               from these graph is that higher the no of internship higher will
-              be credit rating. For example most of whom , who have done 4 or
+              be credit rating. For example those who have done 4 or
               more internship have high affluence score. Those who have done 6
               internhip and belong to tier 1 have rating higher than 300
             </GeneralDiv>
