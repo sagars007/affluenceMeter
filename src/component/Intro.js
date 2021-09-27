@@ -7,13 +7,13 @@ export default class Intro extends Component {
         <div className="intro">
           <div className="introText">
             <div className="hide">
-              <span className="text">"Good credit scores </span>
+              <span className="text">The best credit ratings. </span>
             </div>
             <div className="hide">
-              <span className="text">are a myth</span>
+              <span className="text">For the betterment</span>
             </div>
             <div className="hide">
-              <span className="text">like orgasms."</span>
+              <span className="text">of society</span>
             </div>
           </div>
         </div>
