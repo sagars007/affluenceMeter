@@ -186,19 +186,21 @@ const Conatiner = () => {
                 Domain 3
               </Button>
             </Link>
-            <Button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{
-                scale: 0.95,
-                backgroundColor: "#67F6E7",
-                border: "none",
-                color: "#000",
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 1.5 } }}
-            >
-              Domain 4
-            </Button>
+            <Link to="/domain4">
+              <Button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{
+                  scale: 0.95,
+                  backgroundColor: "#67F6E7",
+                  border: "none",
+                  color: "#000",
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { duration: 1.5 } }}
+              >
+                Domain 4
+              </Button>
+            </Link>
           </ButtonContainer>
         </ColumnLeft>
         <ColumnRight id="clRight">
