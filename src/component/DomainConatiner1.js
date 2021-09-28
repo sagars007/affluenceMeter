@@ -14,7 +14,6 @@ import TierComponent from "./TierComponent";
 import PageHeader from "./generalComponent/PageHeader";
 import { GeneralDiv } from "./styles/education.styles";
 import Table from "./Table";
-
 export default function DomainConatiner1() {
   const eduVscredTier1 = filterEduCredit(1, eduTier);
   const eduVscredTier2 = filterEduCredit(2, eduTier);
