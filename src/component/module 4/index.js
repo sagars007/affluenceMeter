@@ -74,7 +74,9 @@ export default class Module4 extends Component {
     return (
       <div className="newdiv1">
         <Domain>
-          <PageHeader title={"Know How Module 4 Model works"}></PageHeader>
+          <PageHeader
+            title={"Know How Module 4(The Miscellaneous Model)  works"}
+          ></PageHeader>
           <FrequencyDiv>
             <FreqencyBoxComponent
               name={"AA"}
@@ -263,7 +265,7 @@ export default class Module4 extends Component {
             </GeneralDiv>
           </GeneralDiv>
           <YoutubeEmbed
-            embedId="rokGy0huYEA"
+            embedId="iF7FF8V4X0M"
             link={"https://www.youtube.com/embed/"}
           />
         </Domain>

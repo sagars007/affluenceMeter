@@ -326,7 +326,7 @@ export default class TierComponent extends Component {
 
         <YoutubeEmbed
           link={"https://www.youtube.com/embed/"}
-          embedId="rokGy0huYEA"
+          embedId="Kkz7dDIdQkI"
         />
       </div>
     );
