@@ -14,6 +14,7 @@ import {
   LargeConatiner,
 } from "../styles/app.styles";
 import { GeneralDiv } from "../styles/education.styles";
+import YoutubeEmbed from "../YouTube";
 import {
   filterBand,
   graph1finalAxis,
