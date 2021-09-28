@@ -86,7 +86,7 @@ export default class EmpIndex extends Component {
     const XY5 = graph1finalAxis(XYAxsis3D, 4, 6);
 
     return (
-      <div className = "newdiv1">
+      <div className="newdiv1">
         <Domain>
           <PageHeader title={"Know How Employment Model works"}></PageHeader>
           <FrequencyDiv>
@@ -128,13 +128,15 @@ export default class EmpIndex extends Component {
               minHeight: "1020px",
               paddingBottom: "50px",
             }}
+            id="lrgContEdu"
           >
             <GeneralHeaders>Know How Our Model Works</GeneralHeaders>
             <GeneralDiv
               style={{
                 background: "inherit",
                 boxShadow: "none",
-                marginBottom: "50px",
+                minheight: "70%",
+                height: "auto",
                 fontFamily: `"Heebo", sans-serif`,
                 fontSize: "18px",
               }}

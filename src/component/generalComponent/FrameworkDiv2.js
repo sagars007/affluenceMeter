@@ -13,11 +13,18 @@ export default function FrameworkDiv2(props) {
           boxShadow: "none",
           display: "flex",
           flexDirection: "row",
-          height: "600px",
+          minHeight: "600px",
+          height: "auto",
           justifyContent: "space-between",
         }}
+        className="pieHolder"
       >
-        <GeneralDiv width={"65%"} padding={"2%"} radius={"20px"}>
+        <GeneralDiv
+          width={"65%"}
+          padding={"2%"}
+          radius={"20px"}
+          className="divLeft"
+        >
           <GeneralHeaders>{title}</GeneralHeaders>
           <BarChart
             data={data}
@@ -33,6 +40,7 @@ export default function FrameworkDiv2(props) {
           width={"30%"}
           padding={"2%"}
           style={{ background: "inherit" }}
+          className="divLeft"
         >
           <GeneralHeaders>{title}</GeneralHeaders>
           <GeneralDiv

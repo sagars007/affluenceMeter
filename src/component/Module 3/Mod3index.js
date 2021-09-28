@@ -114,15 +114,24 @@ export default class Mod3Index extends Component {
               YDIVISION={labels1}
             ></BarChart>
           </LargeBarGraph>
-          <LargeConatiner style={{ height: "auto", minHeight: "500px" }}>
+          <LargeConatiner
+            style={{
+              height: "auto",
+              minHeight: "1020px !important",
+              paddingBottom: "50px",
+            }}
+            id="lrgContEdu"
+          >
             <GeneralHeaders>Know How Our Model Works</GeneralHeaders>
             <GeneralDiv
               style={{
                 background: "inherit",
                 boxShadow: "none",
-                marginBottom: "50px",
+                minheight: "70%",
+                height: "auto",
                 fontFamily: `"Heebo", sans-serif`,
                 fontSize: "18px",
+                wordBreak: "break-all",
               }}
               padding={"30px"}
             >

@@ -17,11 +17,19 @@ export default class FrameworkDiv1 extends Component {
             boxShadow: "none",
             display: "flex",
             flexDirection: "row",
-            height: "600px",
+            minHeight: "600px",
+            height: "auto",
+
             justifyContent: "space-between",
           }}
+          className="pieHolder"
         >
-          <GeneralDiv width={"40%"} padding={"2%"} radius={"20px"}>
+          <GeneralDiv
+            width={"40%"}
+            padding={"2%"}
+            radius={"20px"}
+            className="divLeft"
+          >
             <GeneralHeaders>{this.props.title1}</GeneralHeaders>
             <PieChart
               data={this.props.pieData}
@@ -39,6 +47,7 @@ export default class FrameworkDiv1 extends Component {
               boxShadow: "none",
             }}
             width={"50%"}
+            className="divLeft"
           >
             <GeneralDiv
               width={"100%"}
