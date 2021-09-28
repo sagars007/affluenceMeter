@@ -29,6 +29,7 @@ export default class FrameworkDiv1 extends Component {
             padding={"2%"}
             radius={"20px"}
             className="divLeft"
+            style={{ marginBottom: "80px" }}
           >
             <GeneralHeaders>{this.props.title1}</GeneralHeaders>
             <PieChart

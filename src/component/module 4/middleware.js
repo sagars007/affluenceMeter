@@ -33,3 +33,28 @@ export function returnAllBandWithDivision1(band) {
   ];
   return AASals;
 }
+export function returnAllBandWithDivision2(band) {
+  const AASals = [
+    OttToBand(band, 4, "Current Town").length,
+    OttToBand(band, 3, "Current Town").length,
+    OttToBand(band, 2, "Current Town").length,
+    OttToBand(band, 1, "Current Town").length,
+  ];
+  return AASals;
+}
+
+export function MarryMiddleWare(band) {
+  let data1 = band.filter((obj) => {
+    return obj["Martial Status"] == 1;
+  });
+  let data2 = band.filter((obj) => {
+    return obj["Martial Status"] == 0;
+  });
+  let data3 = band.filter((obj) => {
+    return obj["Martial Status"] == 1 && obj["Spouse job"] == 1;
+  });
+  let data4 = band.filter((obj) => {
+    return obj["Martial Status"] == 1 && obj["Spouse job"] == 0;
+  });
+  return [data1.length, data2.length, data3.length, data4.length];
+}
