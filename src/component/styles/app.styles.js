@@ -88,9 +88,9 @@ export const FrequencyDiv = styled.div`
 `;
 
 export const FrequencyBox = styled.div`
-  height: 120px;
+  height: 100px;
   width: 200px;
-  padding: 10%;
+  padding: 5%;
   margin-top: 10%;
   background: ${COLORS.color4};
   color: ${COLORS.color5};
