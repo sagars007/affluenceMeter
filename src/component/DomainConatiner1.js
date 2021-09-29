@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  COLORS,
   Domain,
   FrequencyDiv,
   GeneralHeaders,
@@ -50,6 +51,24 @@ export default function DomainConatiner1() {
             name={"Tier 4"}
           />
         </FrequencyDiv>
+        <GeneralDiv
+          style={{
+            height: "50px",
+            marginBottom: "40px",
+            marginLeft: "10%",
+            borderRadius: "5px",
+            color: COLORS.color5,
+            padding: "15px",
+          }}
+          width="80%"
+        >
+          <a
+            href="https://colab.research.google.com/drive/1eE4RjDcU2HaVgxjy1b4TLW3Hrq97xh9J?usp=sharing"
+            style={{ color: "snow", textDecoration: "none" }}
+          >
+            Click Here to find the ML code behind this model{" "}
+          </a>
+        </GeneralDiv>
         <LargeBarGraph>
           <EducationBarChart
             label={label1}

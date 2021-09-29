@@ -111,6 +111,24 @@ export default class EmpIndex extends Component {
               data={XY1[3]}
             ></FreqencyBoxComponent>
           </FrequencyDiv>
+          <GeneralDiv
+            style={{
+              height: "50px",
+              marginBottom: "40px",
+              marginLeft: "10%",
+              borderRadius: "5px",
+              color: COLORS.color5,
+              padding: "15px",
+            }}
+            width="80%"
+          >
+            <a
+              href="https://colab.research.google.com/drive/1PIA9VteMf4vg1ZeQfy8-4kxUWsWBAA2u?usp=sharing"
+              style={{ color: "snow", textDecoration: "none" }}
+            >
+              Click Here to find the ML code behind this model{" "}
+            </a>
+          </GeneralDiv>
           <LargeBarGraph>
             <GeneralHeaders>Salary Vs Band Division</GeneralHeaders>
             <BarChart

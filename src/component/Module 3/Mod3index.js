@@ -103,6 +103,24 @@ export default class Mod3Index extends Component {
               data={XY1[3]}
             ></FreqencyBoxComponent>
           </FrequencyDiv>
+          <GeneralDiv
+            style={{
+              height: "50px",
+              marginBottom: "40px",
+              marginLeft: "10%",
+              borderRadius: "5px",
+              color: COLORS.color5,
+              padding: "15px",
+            }}
+            width="80%"
+          >
+            <a
+              href="https://colab.research.google.com/drive/1Mr9dVTKIafGFrVvmx9fYt1qXdrnji-Y3?usp=sharing"
+              style={{ color: "snow", textDecoration: "none" }}
+            >
+              Click Here to find the ML code behind this model{" "}
+            </a>
+          </GeneralDiv>
           <LargeBarGraph>
             <GeneralHeaders>No of Connection Vs Band Division</GeneralHeaders>
             <BarChart
