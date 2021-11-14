@@ -72,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Website deployed at: https://affluencemeter-radioactive.web.app/
 
-Team Radioactive - Flipkart GRiD 3.0: @sagars007 @maverick0701 @
+Team Radioactive - Flipkart GRiD 3.0: @sagars007 @maverick0701 @Sahil-Pandey
